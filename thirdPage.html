@@ -1,11 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>third page</title>
+    <style>
+        #box1 {
+            background-color: blueviolet;
+            border: 1px solid green;
+            margin: 5px;
+            padding: 5px;
+            /* display: flex; */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: skyblue;
+        }
+
+        .menu-container {
+            background-color: #e2c7c7;
+        }
+
+        .menu {
+            border: 2px solid green;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: khaki;
+        }
+
+        .menu li {
+            float: left;
+            position: relative;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: rgb(226, 9, 9);
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: rgb(255, 255, 255);
+            padding: 12px 20px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
+
 <body>
- third page   
+    <div class="flex">
+        <p>let's learn about CSS</p>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+    </div>
+    <!-- <div class="menu-container">
+        <ul class="menu">
+            <li><a href="./assignment1.html">Option 1</a></li>
+            <li><a href="./assignment3.html">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+            <li><a href="#">Option 4</a></li>
+            <li><a href="#">Option 5</a></li>
+            <li><a href="#">Option 6</a></li>
+            <!-- Add more options as needed -->
+    <!-- </ul>
+    </div> -->
+
+    <div class="menu-container">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Services</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- <div class="menu-container">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="submenu">
+                <a href="#">Services</a>
+                <ul class="dropdown">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    -->
+    </div>
+
 </body>
+
 </html>
