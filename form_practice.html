@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+    <style>
+        .div-group {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form Practice</h1>
+    <form action="welcome.html" method="post">
+        <div class="div-group">
+            <label for="">User Name :</label>
+            <input type="text" name="username" required>
+        </div>
+        <div class="div-group">
+            <label for="">Password :</label>
+            <input type="password" name="password" required>
+        </div>
+        <div class="div-group">
+            <label for="">Address :</label>
+            <textarea name="address" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="div-group">
+            <label for="">Sex :</label>
+            <input type="radio" name="sex" value="male">Male
+            <input type="radio" name="sex" value="female" checked>Female
+        </div>
+        <div class="div-group">
+            <label for="">Hobbies :</label>
+            <input type="checkbox" name="Hobbies" value="dance">Dance
+            <input type="checkbox" name="Hobbies" value="code" checked>Code
+            <input type="checkbox" name="Hobbies" value="swimmimng">Swimmimng
+            <input type="checkbox" name="Hobbies" value="read">Read
+            <input type="checkbox" name="Hobbies" value="musics">Musics
+        </div>
+        <div class="div-group">
+            <label for="">Mobile :</label>
+            <input type="number" name="mob">
+        </div>
+
+        <div class="div-group">
+            <label for="">DOB :</label>
+            <input type="date" name="dob" required>
+        </div>
+
+        <div class="div-group">
+            <label for="">Fav Color :</label>
+            <select name="fav-col">
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="black">Black</option>
+            </select>
+        </div>
+
+
+        <!-- <button type="submit"></button> -->
+        <input type="reset" value="Reset">
+        <input type="submit" value="Creat Account">
+    </form>
+</body>
+
+</html>
