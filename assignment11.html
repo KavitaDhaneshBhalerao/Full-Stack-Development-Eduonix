@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            border: 5px solid green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 1380px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 60px 220px 220px 60px;
+            /* grid-template-rows: 1fr 2fr 2fr 1fr; */
+            /* grid-row-gap: 20px;
+            grid-column-gap: 20px; */
+            grid-gap: 10px;
+
+            grid-auto-rows: 200px;
+        }
+
+        .item-1 {
+            background-color: rebeccapurple;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            /* grid-row: 50px; */
+        }
+
+        .item-2 {
+            background-color: rgb(153, 104, 51);
+            grid-row: 2/4;
+        }
+
+        .item-3 {
+            background-color: rgb(51, 153, 144);
+        }
+
+        .item-4 {
+            background-color: rgb(51, 99, 153);
+        }
+
+        .item-5 {
+            background-color: rgb(59, 153, 51);
+        }
+
+        .item-6 {
+            background-color: rgb(165, 120, 121);
+            grid-row: 3/4;
+            grid-column: 2/5;
+        }
+
+        .item-7 {
+            background-color: rgb(233, 118, 30);
+            grid-column: 1/-1;
+        }
+
+        /* .item-8 {
+            background-color: rgb(418, 42, 92);
+        }
+
+        .item-9 {
+            background-color: rgb(246, 6, 199);
+        }
+
+        .item-10 {
+            background-color: rgb(142, 228, 151);
+        }
+
+        .item-11 {
+            background-color: rgba(168, 164, 73, 0.641);
+        }
+
+        .item-12 {
+            background-color: rgb(59, 123, 119);
+        } */
+
+        .item {
+            /* margin: 5px; */
+            display: grid;
+            place-items: center;
+            font-size: 21px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">Navbar</div>
+        <div class="item item-2">Out-side Section</div>
+        <div class="item item-3">Box-1</div>
+        <div class="item item-4">Box-2</div>
+        <div class="item item-5">Box-3</div>
+        <div class="item item-6">Main Containt Part</div>
+        <div class="item item-7">Footer</div>
+        <!-- <div class="item item-8">item-8</div>
+        <div class="item item-9">item-9</div>
+        <div class="item item-10">item-10</div>
+        <div class="item item-11">item-11</div>
+        <div class="item item-12">item-12</div> -->
+    </div>
+</body>
+
+</html>

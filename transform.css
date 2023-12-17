@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #e9d7f9;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box1 {
+    background-color: brown;
+}
+
+#box2 {
+    background-color: plum;
+}
+
+#box2:hover {
+    transform: translate(500px, -500px);
+    transition: 2s;
+    background-color: palegreen;
+}
+
+#box1:hover {
+    transform: rotate(-150deg);
+    transition: 2s;
+    background-color: rgb(11, 66, 98);
+}

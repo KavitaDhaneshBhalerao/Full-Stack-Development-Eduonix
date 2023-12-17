@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <style>
+        body {
+            margin: 100px;
+        }
+
+        #my-video {
+            border-radius: 50%;
+            background-color: blue;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        button {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left">
+
+            <audio controls autoplay loop preload="auto"
+                src="./download folder/Ae Zindagi Gale Laga Le - (Raag.Fm).mp3" />
+
+            <!-- <audio controls autoplay loop preload="auto">
+                    <source src="./download folder/Nouka Dooobi - (Raag.Fm).mp3">
+                    <source src="./download folder/Safarr - (Raag.Fm).mp3">
+                    <source src="./download folder/Enna Sonaa - (Raag.Fm).mp3">
+                    <source src="./download folder/Samjhawan - (Raag.Fm).mp3">
+                </audio> -->
+            <button id="v-on">Video-On</button>
+            <button id="v-off">Video-Off</button>
+        </div>
+        <br>
+        <div class="right">
+
+            <video src="./download folder/1. React Introduction.mp4" controls width="300" height="300" autoplay loop
+                preload="auto" muted id="my-video" />
+            <button type="menu"></button>
+
+        </div>
+        <div class="main">
+            <iframe width=" 560" height="315" src="https://www.youtube.com/embed/7sppxqEn9Gg?si=WtUoQyJgSjSMcZov"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+        </div>
+    </div>
+</body>
+
+</html>
