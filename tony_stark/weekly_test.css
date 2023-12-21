@@ -1,0 +1,143 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.container {
+    width: 1380px;
+    display: grid;
+    grid-template-columns: .5fr 1.7fr;
+    grid-template-rows: 250px 1px;
+    /* grid-template-rows: 1fr 2fr 2fr 1fr; */
+    /* grid-row-gap: 20px;
+    grid-column-gap: 20px; */
+    grid-gap: 10px;
+    padding: 10px 10px;
+
+    grid-auto-rows: 200px;
+}
+
+.item.item-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-1 {
+    background-color: rgb(168, 114, 114);
+    grid-row: 1/6;
+    margin: 0px;
+    padding: 0px;
+    place-items: center;
+
+    /* margin-top: 10px; */
+    /* padding-top: 10px; */
+}
+
+.item-2 {
+    background-color: rgb(165, 120, 121);
+    grid-row: 1/4;
+    grid-column: 2/5;
+}
+
+.item-3 {
+    background-color: rgb(165, 120, 121);
+    grid-row: 4/6;
+    grid-column: 2/5;
+}
+
+.item {
+    /* margin: 5px; */
+    display: grid;
+    /* place-items: center; */
+    font-size: 21px;
+    margin: 2px;
+    border-radius: 10px;
+    /* background-color: rgba(69, 65, 65, 0.415); */
+    background-color: #333333;
+}
+
+.long-button {
+    display: inline-block;
+    padding: 10px 20px;
+    /* Adjust the padding as needed */
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid black;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 100px;
+    width: 250px;
+    margin-top: 0px;
+    margin: 10px;
+    color: #FFFFFF80;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    /* padding: 10px; */
+}
+
+.col1 {
+    margin: 10px;
+    width: 37%;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+    padding: 20px;
+    color: #FFFFFF80;
+}
+
+.col2 {
+    width: 55%;
+    margin: 10px;
+    margin-right: 0px;
+}
+
+/* Apply styles to the table */
+table {
+    width: 80%;
+    /* border-collapse: collapse; */
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid gray;
+    margin-left: 20px;
+}
+
+table tr:first-child td {
+    border-bottom: 2px solid gray;
+
+
+}
+
+tr td:last-child {
+    border-right: none;
+}
+
+tr td {
+    /* border-right: none; */
+    border-right: 2px solid gray;
+}
+
+/* Style the table header */
+thead,
+td {
+    /* border-collapse: collapse; */
+    padding: 12px;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
