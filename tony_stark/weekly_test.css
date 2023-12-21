@@ -117,8 +117,6 @@ table {
 
 table tr:first-child td {
     border-bottom: 2px solid gray;
-
-
 }
 
 tr td:last-child {
@@ -128,16 +126,10 @@ tr td:last-child {
 tr td {
     /* border-right: none; */
     border-right: 2px solid gray;
-}
-
-/* Style the table header */
-thead,
-td {
-    /* border-collapse: collapse; */
     padding: 12px;
     text-align: left;
 }
 
 tr:hover {
-    background-color: #ddd;
+    background-color: #222;
 }
