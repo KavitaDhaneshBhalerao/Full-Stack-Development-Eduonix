@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "LOUNGE CHAIR",
+        "price": 200,
+        "image": "assets/chair-12.avif"
+    },
+    {
+        "id": 2,
+        "name": "L02 LOUNGE CHAIR",
+        "price": 300,
+        "image": "assets/chair-13.avif"
+    },
+    {
+        "id": 3,
+        "name": " L03 LOUNGE CHAIR",
+        "price": 200,
+        "image": "assets/chair-14.avif"
+    },
+    {
+        "id": 4,
+        "name": " L04 LOUNGE CHAIR",
+        "price": 220,
+        "image": "assets/chair-11.avif"
+    },
+    {
+        "id": 5,
+        "name": " L05 LOUNGE CHAIR",
+        "price": 400,
+        "image": "assets/chair-5.avif"
+    },
+    {
+        "id": 6,
+        "name": " L06 LOUNGE CHAIR",
+        "price": 300,
+        "image": "assets/chair-7.avif"
+    },
+    {
+        "id": 7,
+        "name": " L07 LOUNGE CHAIR",
+        "price": 300,
+        "image": "assets/chair-4.avif"
+    },
+    {
+        "id": 8,
+        "name": " L08 LOUNGE CHAIR",
+        "price": 400,
+        "image": "assets/chair-2.avif"
+    },
+    {
+        "id": 9,
+        "name": " L09 LOUNGE CHAIR",
+        "price": 300,
+        "image": "assets/chair-3.avif"
+    },
+    {
+        "id": 10,
+        "name": " L010 LOUNGE CHAIR",
+        "price": 300,
+        "image": "assets/chair-10.avif"
+    }
+]

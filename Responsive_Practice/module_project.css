@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    margin: 1% 1%;
+    /* border: 1px solid firebrick; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 0.5fr 2fr 5fr;
+    grid-template-areas: "nav nav nav nav" "aside slider slider slider" "aside main main main";
+    height: 100vh;
+}
+
+nav {
+    background-color: blueviolet;
+    grid-area: nav;
+}
+
+aside {
+    background-color: plum;
+    grid-area: aside;
+}
+
+.slider {
+    background-color: lemonchiffon;
+    grid-area: slider;
+    height: auto;
+}
+
+.carousel slide {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "box-1 box-2 box-3";
+    grid-gap: 2px;
+    height: auto;
+
+}
+
+.box-1 {
+    background-color: aqua;
+    grid-area: box-1;
+}
+
+.box-2 {
+    background-color: palegreen;
+    grid-area: box-2;
+}
+
+.box-3 {
+    background-color: olivedrab;
+    grid-area: box-3;
+}
+
+.main {
+    background-color: darkkhaki;
+    grid-area: main;
+}

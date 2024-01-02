@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;400&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform 0.5s;
+}
+
+svg {
+    width: 30px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px px;
+}
+
+header .icon-cart {
+    position: relative;
+}
+
+header .icon-cart span {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+}
+
+.listProduct .item img {
+    width: 90%;
+    filter: drop-shadow(0 15px 15px #0009);
+}
+
+
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.listProduct .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.listProduct .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProduct .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+    /* padding: 10px; */
+}
+
+.listProduct .item button {
+    background-color: #353432;
+    color: #eee;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.cartTab {
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    /* top: 0;
+    right: 0;
+    bottom: 0; */
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: 0.5s;
+}
+
+body.showCart .cartTab {
+    inset: 0 0 0 auto;
+}
+
+body.showCart .container {
+    transform: translateX(-250px);
+}
+
+.cartTab h1 {
+    padding: 20px;
+    margin: 0px;
+    font-weight: 300;
+}
+
+.cartTab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .btn button {
+    background-color: #e8bc0e;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.cartTab .btn .close {
+    background-color: #eee;
+}
+
+.cartTab .ListCart .item img {
+    width: 100%;
+    filter: drop-shadow(0 15px 15px #0009);
+}
+
+.cartTab .ListCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.ListCart .quantity span {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ListCart .quantity :nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+}
+
+.ListCart .item :nth-child(even) {
+    background-color: #eee1;
+}
+
+.ListCart {
+    overflow: auto;
+}
+
+.ListCart ::-webkit-scrollbar {
+    width: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
